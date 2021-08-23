@@ -147,7 +147,10 @@ img.resize {
   max-height: 60%;
   transform: scaleX(-1);
 }
-
+.image {
+  width: 50%;
+  height: 50%;
+}
 /*===================== Hero section ======================*/
 
 .about-img {
