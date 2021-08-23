@@ -148,8 +148,8 @@ img.resize {
   transform: scaleX(-1);
 }
 .image {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
 }
 /*===================== Hero section ======================*/
 
@@ -310,11 +310,14 @@ img.resize {
 }
 
 .portfolio-item:hover .portfolio-btn {
-  opacity: 1;
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
-  top: 30px;
-  left: 30px;
+  opacity: 0.98;
+  width: calc(100% - 100px);
+  height: calc(100% - 80px);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 35px;
+  left: 15px;
 }
 /*******************************/
 /******* Experience CSS ********/
