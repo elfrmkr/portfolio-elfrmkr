@@ -47,6 +47,7 @@ h3.note {
 h1 {
   font-family: "Cookie", cursive;
   font-weight: bold;
+  font-size: 100px;
 }
 
 .note {
@@ -81,13 +82,18 @@ p {
   font-size: 16px;
   line-height: 2.6;
 }
-@media (max-width: 450.98px) {
+@media (max-width: 550.98px) {
   h1 {
     font-size: 70px;
+    align-items: flex-start;
   }
   h2 {
-    font-size: 27px;
+    font-size: 20px;
   }
+}
+
+.line {
+  line-height: 10px;
 }
 /********** Template CSS ************/
 
@@ -179,7 +185,7 @@ img.resize {
 }
 
 .blue {
-  display: relative;
+  display: fixed;
   text-align: center;
   height: 95uv;
   line-height: 100px;
@@ -188,6 +194,29 @@ img.resize {
   align-items: center;
   background-image: linear-gradient(315deg, #013374 0%, #00ffc8d2 74%);
   background-size: contain;
+}
+@media (max-width: 700px) {
+  .blue {
+    line-height: 60px;
+    padding: 80px;
+  }
+}
+.typed {
+  font-size: 40px;
+}
+
+@media (max-width: 450px) {
+  .typed {
+    line-height: 27px;
+    padding: 35px;
+    font-size: 20px;
+  }
+  .typed-cursor {
+    font-size: 25px;
+  }
+  .btn-white {
+    padding: 7px 10px;
+  }
 }
 .btn {
   border: 2px solid #007bff;
@@ -344,9 +373,11 @@ img.resize {
 @media (max-width: 580px) {
   .edu {
     font-size: 40px;
-    padding: 0px 0px 0px 0px;
     line-height: 30px;
     letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 }
 .experience {
