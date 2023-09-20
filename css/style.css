@@ -40,6 +40,7 @@ h5,
 h6 {
   color: #14121fb6 !important;
 }
+
 h3.note {
   color: #ffffff;
 }
@@ -57,6 +58,7 @@ h1 {
     "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
 }
+
 .note2 {
   color: rgb(0, 0, 0);
   font-style: normal;
@@ -65,6 +67,7 @@ h1 {
   font-size: 14px;
   display: flex;
 }
+
 p {
   color: rgb(28, 28, 29);
   font-style: normal;
@@ -74,6 +77,7 @@ p {
   display: flex;
   line-height: 1.8;
 }
+
 .tanıtım {
   color: rgb(28, 28, 29);
   text-align: justify;
@@ -82,11 +86,13 @@ p {
   font-size: 16px;
   line-height: 2.6;
 }
+
 @media (max-width: 550.98px) {
   h1 {
     font-size: 70px;
     align-items: flex-start;
   }
+
   h2 {
     font-size: 20px;
   }
@@ -95,6 +101,7 @@ p {
 .line {
   line-height: 10px;
 }
+
 /********** Template CSS ************/
 
 .text-stroke-header {
@@ -136,11 +143,12 @@ h6.big {
   color: #00779ed7;
   font-weight: 500;
   outline: none;
+  margin-left: 12px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #00ffbf;
+  color: rgb(38 224 195);
 }
 
 @media (max-width: 991.98px) {
@@ -148,15 +156,18 @@ h6.big {
     padding: 10px 0;
   }
 }
+
 img.resize {
   max-width: 70%;
   max-height: 60%;
   transform: scaleX(-1);
 }
+
 .image {
   width: 80%;
   height: 80%;
 }
+
 /*===================== Hero section ======================*/
 
 .about-img {
@@ -169,6 +180,7 @@ img.resize {
   font-weight: 1000;
   color: #ffe6e6;
 }
+
 .hero-image {
   position: relative;
   text-align: right;
@@ -187,20 +199,22 @@ img.resize {
 .blue {
   display: fixed;
   text-align: center;
-  height: 95uv;
-  line-height: 100px;
+  height: 100uv;
+  line-height: 90px;
   padding: 160px;
   align-content: center;
   align-items: center;
   background-image: linear-gradient(315deg, #013374 0%, #00ffc8d2 74%);
   background-size: contain;
 }
+
 @media (max-width: 700px) {
   .blue {
     line-height: 60px;
     padding: 80px;
   }
 }
+
 .typed {
   font-size: 40px;
 }
@@ -211,26 +225,32 @@ img.resize {
     padding: 35px;
     font-size: 20px;
   }
+
   .typed-cursor {
     font-size: 25px;
   }
+
   .btn-white {
     padding: 6px 10px;
   }
 }
+
 .btn {
   border: 2px solid #007bff;
 }
+
 .btn-white {
   background-color: #ffffff;
   border: 2px solid;
   color: #007bff;
   border-color: rgb(255, 255, 255);
 }
+
 .btn-blue {
   border: 2.4px solid #ffffff;
   color: #ffffff;
 }
+
 @media (max-width: 700px) {
   .about-img {
     margin-left: 20px;
@@ -296,6 +316,10 @@ img.resize {
   transition: 2s;
 }
 
+.intro p {
+  font-size: 18px;
+}
+
 /* =================== Queality ======================*/
 .ex-me {
   margin-top: 35px;
@@ -322,9 +346,11 @@ img.resize {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .service-box:hover {
   box-shadow: 0px 1px 13px rgba(0, 3, 39, 0.685);
 }
+
 /* =================== Portfolio section ==================*/
 
 .portfolio-item .portfolio-btn {
@@ -348,6 +374,7 @@ img.resize {
   top: 35px;
   left: 15px;
 }
+
 /*******************************/
 /******* Experience CSS ********/
 /*******************************/
@@ -361,6 +388,7 @@ img.resize {
   letter-spacing: -2px;
   font-weight: bold;
 }
+
 .skill {
   font-family: times, Times New Roman, times-roman, georgia, serif;
   margin: 0;
@@ -370,6 +398,7 @@ img.resize {
   letter-spacing: -2px;
   font-weight: bold;
 }
+
 @media (max-width: 580px) {
   .edu {
     font-size: 40px;
@@ -380,6 +409,7 @@ img.resize {
     display: flex;
   }
 }
+
 .experience {
   position: relative;
   padding: 45px 0 15px 0;
@@ -612,6 +642,7 @@ img.resize {
   0% {
     transform: translateY(0);
   }
+
   100% {
     transform: translateY(-15px);
   }
