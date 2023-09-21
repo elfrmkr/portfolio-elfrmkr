@@ -148,7 +148,7 @@ h6.big {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgb(38 224 195);
+  color: rgb(66, 233, 255);
 }
 
 @media (max-width: 991.98px) {
@@ -178,7 +178,7 @@ img.resize {
 .display-1 {
   font-size: 130px;
   font-weight: 1000;
-  color: #ffe6e6;
+  color: #4b4958;
 }
 
 .hero-image {
@@ -193,7 +193,7 @@ img.resize {
 
 .typed-cursor {
   font-size: 45px;
-  color: #dbdaff;
+  color: #929292;
 }
 
 .blue {
@@ -236,13 +236,13 @@ img.resize {
 }
 
 .btn {
-  border: 2px solid #007bff;
+  border: 2px solid #00bfffd7;
 }
 
 .btn-white {
   background-color: #ffffff;
   border: 2px solid;
-  color: #007bff;
+  color: #00779ed7;
   border-color: rgb(255, 255, 255);
 }
 
@@ -424,7 +424,7 @@ img.resize {
   content: "";
   position: absolute;
   width: 2px;
-  background: #007bff;
+  background: #00779ed7;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -456,7 +456,7 @@ img.resize {
   top: 48px;
   right: -8px;
   background: #ffffff;
-  border: 2px solid #007bff;
+  border: 2px solid #00779ed7;
   border-radius: 16px;
   z-index: 1;
 }
@@ -488,7 +488,7 @@ img.resize {
   top: 44px;
   font-size: 16px;
   font-weight: 600;
-  color: #007bff;
+  color: #00779ed7;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -604,7 +604,7 @@ img.resize {
 }
 
 .testimonial-carousel .owl-dot.active {
-  background: #0bceaf;
+  background: #00cbda;
 }
 
 /* ========================== Contact Us ========================*/
@@ -656,5 +656,5 @@ img.resize {
  } */
 
 .hey {
-  background: #007bff;
+  background: #00779ed7;
 }
