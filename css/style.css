@@ -224,16 +224,15 @@ img.resize {
   color: #929292;
 }
 
-.blue {
-  display: fixed;
-  text-align: center;
-  height: 100uv;
-  line-height: 90px;
-  padding: 160px;
-  align-content: center;
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80');
+  padding: 30px 0;
+  background-size: cover;
+  height: 100vh;
+  /* Set to viewport height */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(315deg, #013374 0%, #00ffc8d2 74%);
-  background-size: contain;
 }
 
 .blue {
@@ -335,7 +334,6 @@ img.resize {
 }
 
 
-/*===================== Progress Bar ====================*/
 
 .progress {
   border-radius: 10px;
