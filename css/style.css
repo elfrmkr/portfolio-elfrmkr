@@ -181,6 +181,34 @@ img.resize {
   color: #4b4958;
 }
 
+@media (min-width: 880px) and (max-width: 1370px) {
+  .display-1 {
+    font-size: 80px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 880px) {
+  .display-1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 480px) and (max-width:680px) {
+  .display-1 {
+    font-size: 50px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width:480px) {
+  .display-1 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+}
+
 .hero-image {
   position: relative;
   text-align: right;
@@ -208,10 +236,42 @@ img.resize {
   background-size: contain;
 }
 
-@media (max-width: 700px) {
-  .blue {
-    line-height: 60px;
-    padding: 80px;
+.blue {
+  padding: 20px;
+}
+
+@media (max-height: 450px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+.glass-overlay {
+  position: absolute;
+  /* Position the overlay absolutely within the hero div */
+  width: 55%;
+  height: 60%;
+  backdrop-filter: blur(13px);
+  border-radius: 15px;
+  /* Apply the blur effect */
+  background-color: rgba(255, 255, 255, 0.2);
+
+  /* Adjust the overlay color and opacity */
+  z-index: 1;
+  /* Ensure the overlay is on top of the background image */
+}
+
+@media (min-width: 680px) and (max-width: 1680px) {
+  .glass-overlay {
+    width: 65%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 680px) {
+  .glass-overlay {
+    width: 80%;
+    height: 75%;
   }
 }
 
@@ -220,11 +280,11 @@ img.resize {
   padding: 35px;
 }
 
-@media (max-width: 450px) {
+
+
+@media (max-width: 650px) {
   .typed {
-    line-height: 27px;
-    padding: 35px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .typed-cursor {
