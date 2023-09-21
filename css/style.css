@@ -259,50 +259,20 @@ img.resize {
   }
 }
 
-/* ========================= */
-
-.waves {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 95uv;
-  transition: 500ms;
-  z-index: -1;
+.btn-outline-secondary {
+  color: #272727;
+  border-color: #555;
+  font-weight: 500;
+  /* Change border color on hover */
 }
 
-.waves::before,
-.waves::after {
-  content: "";
-  position: absolute;
-  width: 300vw;
-  height: 300vw;
-  top: -65vw;
-  left: 50%;
-  transform: translate(-50%, -75%);
+
+.btn-outline-secondary:hover {
+  background: #fdfdfddc;
+  color: #3d3d3d;
+  /* Change border color on hover */
 }
 
-.waves::after {
-  border-radius: 44%;
-  background: rgba(27, 23, 255, 0.61);
-  animation: waves 8s linear infinite;
-}
-
-.waves::before {
-  border-radius: 44%;
-  background: rgba(65, 233, 255, 0.788);
-  animation: waves 15s linear infinite;
-}
-
-@keyframes waves {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
-}
 
 /*===================== Progress Bar ====================*/
 
