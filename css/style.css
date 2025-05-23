@@ -32,7 +32,7 @@ body.light-theme {
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 3px;
 }
 
 body {
@@ -305,6 +305,127 @@ section {
   color: var(--text-alt);
 }
 
+/*Experience*/
+
+#experience {
+  padding: 20px 0;
+}
+
+#experience h3 {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+
+#experience h3#experience-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#experience p {
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+  color: var(--text-alt);
+}
+
+#experience ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+}
+
+#experience li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: var(--text-color);
+}
+
+#experience li::before {
+  content: '▹';
+  /* Custom bullet */
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 56%;
+  padding-top: 24px;
+}
+
+.timeline-item.left {
+  left: 0;
+  padding-right: 100px;
+}
+
+.timeline-item.right {
+  left: 50%;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.timeline-item .content {
+  background: var(--bg-alt);
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.timeline-item .date {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+  }
+}
+
+
 /* Skills */
 #skills {
   margin-top: 4rem;
@@ -352,6 +473,23 @@ section {
   color: var(--primary-color);
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.portfolio-note {
+  max-width: 900px;
+  margin: 1.5rem auto 3rem auto;
+  font-size: 1rem;
+  color: var(--text-color, #333);
+  text-align: center;
+}
+
+.portfolio-note a {
+  color: var(--primary-color, #007acc);
+  text-decoration: underline;
+}
+
+.portfolio-note a:hover {
+  color: var(--primary-hover-color, #005f99);
 }
 
 .projects {
@@ -428,6 +566,108 @@ body.light-theme .project-img {
   box-shadow: 0 0 15px var(--primary-color);
 }
 
+/*Medium*/
+/* Medium Articles Carousel Container */
+#medium-articles {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+#medium-articles h3#medium-articles-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+/* Carousel Wrapper */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Track Container */
+.carousel-track-container {
+  overflow: hidden;
+}
+
+/* Carousel Track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Each Slide */
+.carousel-slide {
+  min-width: 300px;
+  margin-right: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-alt, #fff);
+  cursor: pointer;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.carousel-slide h4 {
+  padding: 0.5rem 1rem 1rem;
+  font-size: 1.1rem;
+  color: var(--text-color, #222);
+}
+
+/* Buttons styling */
+.carousel button.prev,
+.carousel button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  /* Slightly stronger background */
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 40px;
+  /* Fixed width and height for perfect circle */
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  /* Perfectly round */
+  user-select: none;
+  display: flex;
+  /* Center icon vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+  z-index: 10;
+  /* Ensure buttons are always on top */
+}
+
+.carousel button.prev:hover,
+.carousel button.next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Position left and right buttons */
+.carousel button.prev {
+  left: 0.5rem;
+}
+
+.carousel button.next {
+  right: 0.5rem;
+}
+
+
 /* Contact */
 #contact {
   background: var(--bg-alt);
@@ -448,6 +688,24 @@ body.light-theme .project-img {
   margin-bottom: 1.5rem;
   font-size: 1.15rem;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: var(--text-color, #333);
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color, #00a0d6);
+}
+
 
 /* Footer */
 footer {

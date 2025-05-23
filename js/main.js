@@ -46,3 +46,61 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+const slideWidth = slides[0].getBoundingClientRect().width + 16; // slide + margin
+
+let currentIndex = 0;
+
+function moveToSlide(index) {
+  track.style.transform = 'translateX(-' + (slideWidth * index) + 'px)';
+}
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  moveToSlide(currentIndex);
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  moveToSlide(currentIndex);
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      e.preventDefault();
+
+      const startY = window.pageYOffset;
+      const endY = target.getBoundingClientRect().top + startY;
+      const duration = 1200; // Adjust for slower/faster scroll (ms)
+      const startTime = performance.now();
+
+      function scrollAnimation(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = easeInOutCubic(progress);
+
+        window.scrollTo(0, startY + (endY - startY) * ease);
+
+        if (progress < 1) {
+          requestAnimationFrame(scrollAnimation);
+        }
+      }
+
+      function easeInOutCubic(t) {
+        return t < 0.5
+          ? 4 * t * t * t
+          : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      requestAnimationFrame(scrollAnimation);
+    }
+  });
+});
